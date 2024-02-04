@@ -25,4 +25,4 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         protocol: ftp
-        server-dir: /home/vikovamu/
+        server-dir: /www/vikovamu.myhostpoint.ch/
