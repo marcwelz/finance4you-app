@@ -1,0 +1,23 @@
+name: FTP finance4you Deploy
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Build project
+      run: |
+        npm install
+        npm run build
+
+    - name: FTP finance4you Deploy
+      uses: SamKirkland/FTP-Deploy-Action@4.2.0
+      with:
+        ftp-server: ftp://deinserver.com/path/to/website
+        ftp-username: ${{ secrets.FTP_USERNAME }}
+        ftp-password: ${{ secrets.FTP_PASSWORD }}
