@@ -4,7 +4,7 @@ import LoginPage from "../../components/LoginPage";
 import Typography from "@mui/material/Typography";
 import TextField from "@mui/material/TextField";
 import { PieChart } from "react-minimal-pie-chart";
-import { FormEvent, useEffect, useState } from "react";
+import { FormEvent, useState } from "react";
 import Button from "@mui/material/Button";
 import { MuiColorInput } from "mui-color-input";
 

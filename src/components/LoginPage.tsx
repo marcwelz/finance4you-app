@@ -4,9 +4,10 @@ import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import { Card } from "@mui/material";
 import Typography from "@mui/material/Typography";
+import { FormEvent } from "react";
 
 const LoginForm = () => {
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     console.log({
