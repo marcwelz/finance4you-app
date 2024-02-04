@@ -12,21 +12,20 @@ import { palette } from "@/data/CustomTheme";
 const Header = () => {
   return (
     <AppBar position="static">
-      <Toolbar sx={{ backgroundColor: palette.primary.main }}>
+      <Toolbar sx={{ backgroundColor: palette.primary.mutedSageGreen }}>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           Finance4you
         </Typography>
-        <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-          <Button color="primary" variant="outlined">
-            Startseite
-          </Button>
-          <Button variant="contained">Übersicht</Button>
-          <Button variant="contained">Ausgaben</Button>
-          <Button variant="contained">Mein Profil</Button>
+        <Box marginLeft={"3rem"}>
+          <IconButton
+            size="large"
+            edge="end"
+            color="inherit"
+            aria-label="search"
+          >
+            <SearchIcon />
+          </IconButton>
         </Box>
-        <IconButton size="large" edge="end" color="inherit" aria-label="search">
-          <SearchIcon />
-        </IconButton>
       </Toolbar>
     </AppBar>
   );
